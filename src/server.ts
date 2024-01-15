@@ -25,7 +25,7 @@ const server = app.listen(port, () => {
 });
 
 const customGenerationFunction = () =>
-	(Math.random().toString(36) + "0000000000000000000").substring(2, 8);
+	(Math.random().toString(36) + "0000000000000000000").substring(2, 6);
 
 const peerServer = ExpressPeerServer(server, {
     path: '/',
